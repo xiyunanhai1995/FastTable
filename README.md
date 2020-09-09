@@ -140,7 +140,7 @@ while( strcmp( HashTable[hash]->key, key) )
 
 > **但我既要 O(1) 查询，又要删除功能怎么办呢？**
 
-> 那就得换哈希表的结构了，比如下面这种 链地址法，不存在上述问题。
+> 那就得换哈希表的结构了，比如下面这种**链地址法**，不存在上述问题。
 
 > <p align="center"><img src="Pictures/8.png" width="60%"\></p>
 > <p align="center" style="color:orange; font-size:14px; color: #999; " >图8 哈希表的链地址法</p>
@@ -157,7 +157,7 @@ while( strcmp( HashTable[hash]->key, key) )
 
 > 注：将该节点重新插入到尾部仅涉及指针的修改，并不释放节点，所以哈希表不需要任何修改。
 
-## 结束~
+## 5 实现
 
 程序采用 C++ 编写，运行结果示例：
 
@@ -191,6 +191,7 @@ while( strcmp( HashTable[hash]->key, key) )
 ||  4 → jack  
 -------------------------  
 ```
+
 
 
 # 参考文章
